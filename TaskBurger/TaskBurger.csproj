@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\Features\" />
+    <Folder Include="Views\Chef\" />
+    <Folder Include="Views\Menu\" />
+    <Folder Include="Views\Booking\" />
+    <Folder Include="Views\Pages\" />
+    <Folder Include="Views\Contact\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Views\About\" />
+    <None Remove="Views\Features\" />
+    <None Remove="Views\Chef\" />
+    <None Remove="Views\Menu\" />
+    <None Remove="Views\Booking\" />
+    <None Remove="Views\Pages\" />
+    <None Remove="Views\Contact\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0" />
+  </ItemGroup>
+</Project>
